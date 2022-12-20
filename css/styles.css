@@ -4,13 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
-}
+    scroll-padding-top: 20px;}
 
 body {
     height: 200vh;
@@ -26,7 +25,7 @@ header {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    background-color: #121212;
+    background-color: #151515;
     color: #C4C4C4;
     border-bottom: 3px solid #666;
     top: 0;
@@ -79,17 +78,15 @@ main {
 section {
     min-height: 50vh;
     width: 100%;
-}
-
-section:last-child {
-    margin-bottom: 200px;
+    padding: 50px;
 }
 
 .section-title {
     text-align: center;
+    font-size: 200%;
 }
 
-#github-link {
+#github-btn {
     background-color: #383636;
     padding: 10px 100px;
     border-radius: 20px;
@@ -98,12 +95,69 @@ section:last-child {
     font-weight: bold;
 }
 
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills h1 {
+    width: 100%;
+}
+
+.skills-full-table {
+    width: 50%;
+    height: 50%;
+    background-color: #333;
+    border: 10px solid #444;
+    border-radius: 10px;
+}
+
+.skills-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-table h1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+.skills-icons {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.skills-text {
+    width: 40%;
+}
+
+#skills-name {
+    font-size: 300%;
+}
+
+#skills-description {
+    font-size: 200%;
+}
+
 footer {
     padding: 15px;
+    display: block;
     text-align: center;
     background-color: #121212;
-    border-top: 3px solid #666;
     color: #C4C4C4;
+}
+
+#github-link {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+#github-link:hover {
+    color: #CC0000;
 }
 
 @media screen and (max-width: 480px) {
