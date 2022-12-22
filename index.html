@@ -20,15 +20,27 @@
                 <li><a href="#about-me">Sobre Mim</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Projetos</a></li>
+                <li id="submenu-btn">
+                    <a href="index.html">Requisitos</a>
+                    <ul id="submenu">
+                        <li><a href="index.html">Requisitos</a></li>
+                    </ul>
+                </li>
             </ul>
             <button id="ham-btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
     <main>
         <section id="home">
-            <h1>Olá, eu sou Rafael Yu</h1>
-            <h1>Futuro Game Developer</h1>
-            <a id="github-btn" href="https://github.com/YuuY314" target="_blank">Perfil do Github</a>
+            <div>
+                <div>
+                    <h1>Olá, eu sou Rafael Yu</h1>
+                    <h1>Futuro Game Developer</h1>
+                </div>
+                <div>
+                    <a id="github-btn" href="https://github.com/YuuY314" target="_blank">Perfil do Github</a>
+                </div>
+            </div>
         </section>
         <section id="about-me">
             <h1 class="section-title">Sobre Mim</h1>
@@ -63,6 +75,9 @@
         </section>
         <section id="projects">
             <h1 class="section-title">Projetos</h1>
+            <div class="projects-container">
+                <img class="projects-img" src="img/projeto-dark-souls-fanpage.jpeg" alt="Dark Souls Fanpage">
+            </div>
         </section>
     </main>
     <footer>Desenvolvido por <a id="github-link" href="https://github.com/YuuY314" target="_blank">Rafael Yu</a></footer>

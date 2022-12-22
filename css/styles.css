@@ -48,6 +48,22 @@ header nav ul li a {
     position: relative;
 }
 
+#submenu-btn {
+    position: relative;
+    display: inline;
+}
+
+#submenu {
+    position: absolute;
+    left: 0;
+    background-color: #151515;
+    display: none;
+}
+
+#submenu-btn:hover  #submenu {
+    display: block;
+}
+
 header nav ul li a:after {
     bottom: 0;
     content: "";
@@ -83,7 +99,21 @@ section {
 
 .section-title {
     text-align: center;
-    font-size: 200%;
+    font-size: 300%;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home div div {
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    font-size: 300%;
 }
 
 #github-btn {
@@ -93,6 +123,9 @@ section {
     color: #C4C4C4;
     text-decoration: none;
     font-weight: bold;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
 }
 
 #skills {
@@ -141,6 +174,16 @@ section {
 
 #skills-description {
     font-size: 200%;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-img {
+    width: 50%;
+    cursor: pointer;
 }
 
 footer {
