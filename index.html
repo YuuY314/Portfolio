@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Rafael Yu</title>
+    <link rel="shortcut icon" href="img/controller-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -13,7 +14,7 @@
 </head>
 <body>
     <header>
-        <h1>Logo</h1>
+        <h1><a href="index.html"><img src="img/controller-logo.png" alt="Logo">Yu's Portfolio</a></h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -24,17 +25,32 @@
                     <a href="index.html">Requisitos</a>
                     <ul id="submenu">
                         <li><a href="index.html">Requisitos</a></li>
+                        <li><a href="index.html">Requisitos</a></li>
+                        <li><a href="index.html">Requisitos</a></li>
                     </ul>
                 </li>
             </ul>
-            <button id="ham-btn"><i class="fa-solid fa-bars"></i></button>
+            <li id="ham-btn">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <div id="ham-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-me">Sobre Mim</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                    </ul>
+                </div>
+            </li>
         </nav>
     </header>
     <main>
         <section id="home">
+            <div id="home-img">
+                <img src="img/gaming-illustration.webp" alt="Ilustração Jogando">
+            </div>
             <div>
                 <div>
-                    <h1>Olá, eu sou Rafael Yu</h1>
+                    <h1>Olá, eu sou <span id="my-name">Rafael Yu</span></h1>
                     <h1>Futuro Game Developer</h1>
                 </div>
                 <div>
@@ -44,11 +60,24 @@
         </section>
         <section id="about-me">
             <h1 class="section-title">Sobre Mim</h1>
-            <p></p>
+            <div id="about-me-container">
+                <img id="profile-pic" src="img/rafael-yu.jpg" alt="Rafael Yu">
+                <div id="about-me-table">
+                    <div id="about-me-selector">
+                        <button class="about-me-btn pressed" id="info">Informações</button><!--
+                        --><button class="about-me-btn" id="exp">Experiência</button><!--
+                        --><button class="about-me-btn" id="goals">Objetivos</button>
+                    </div>
+                    <div id="about-me-text">
+                        <h3 id="about-me-subtitle">Informações</h3>
+                        <p id="about-me-description">Meu nome é Rafael Yu, apenas isso. Tenho 17 anos. Sou estudante de Informática do IFRJ Campus Arraial do Cabo. Gosto de muitas coisas e me falta tempo para aproveitar as milhões de coisas que fui passar a gostar. Tenho gosto por minhas criações e quero criar mais conteúdo, apesar de faltar um tom artístico como você pode ver no design deste portfolio.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="skills">
             <h1 class="section-title">Habilidades</h1>
-            <div class="skills-full-table">
+            <div id="skills-full-table">
                 <div class="skills-table" id="skills-code">
                     <h1>Linguagens</h1>
                     <img class="skills-icons" id="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
@@ -68,15 +97,28 @@
                     <img class="skills-icons" id="unity" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"/>
                 </div>
             </div>
-            <div class="skills-text">
-                <h1 id="skills-name">Clique em qualquer ícone</h1>
-                <p id="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reiciendis exercitationem nobis quibusdam, delectus, illum animi nesciunt in, voluptas itaque cum ratione? Voluptatibus a, laboriosam blanditiis dolor explicabo qui at!</p>
+            <div id="skills-text">
+                <h1 id="skills-name">Clique num ícone</h1>
+                <p id="skills-description">Por favor, aperte num ícone.</p>
             </div>
         </section>
         <section id="projects">
             <h1 class="section-title">Projetos</h1>
-            <div class="projects-container">
+            <div class="projects-container" id="ds-fanpage">
+                <h2>Dark Souls Fanpage</h2>
                 <img class="projects-img" src="img/projeto-dark-souls-fanpage.jpeg" alt="Dark Souls Fanpage">
+                <div>
+                    <a class="projects-link" href="https://github.com/YuuY314/Dark-Souls-Fanpage" target="_blank">Repositório <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="projects-link" href="https://yuuy314.github.io/Dark-Souls-Fanpage/" target="_blank">Acessar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects-container" id="dungeon-mail">
+                <h2>Dungeon Mail</h2>
+                <img class="projects-img" src="img/projeto-dungeon-mail.webp" alt="Dungeon Mail">
+                <div>
+                    <a class="projects-link" href="https://github.com/YuuY314/Dungeon-Mail" target="_blank">Repositório <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="projects-link" href="https://gamejolt.com/games/dungeonmail/756421" target="_blank">Acessar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </section>
     </main>

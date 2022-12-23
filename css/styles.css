@@ -9,7 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 20px;}
+    scroll-padding-top: 70px;}
 
 body {
     height: 200vh;
@@ -17,6 +17,14 @@ body {
     background-color: #121212;
     margin-top: 70px;
     position: relative;
+}
+
+a {
+    color: lightblue;
+}
+
+ul, li {
+    list-style-type: none;
 }
 
 header {
@@ -30,6 +38,21 @@ header {
     border-bottom: 3px solid #666;
     top: 0;
     z-index: 100;
+}
+
+header h1 a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+}
+
+header h1 a:hover {
+    color: #C4C4C4;
+}
+
+header h1 a img {
+    height: 70px;
 }
 
 header nav ul {
@@ -50,12 +73,13 @@ header nav ul li a {
 
 #submenu-btn {
     position: relative;
-    display: inline;
+    display: inline-block;
 }
 
 #submenu {
     position: absolute;
     left: 0;
+    margin-top: 20px;
     background-color: #151515;
     display: none;
 }
@@ -85,14 +109,19 @@ header nav ul li a:hover:after {
     display: none;
 }
 
+#ham-nav {
+    position: absolute;
+    display: none;
+}
+
 main {
     min-height: 200vh;
     width: 100%;
-    color: #C4C4C4;
+    color: #FFF;
 }
 
 section {
-    min-height: 50vh;
+    min-height: 95vh;
     width: 100%;
     padding: 50px;
 }
@@ -100,12 +129,15 @@ section {
 .section-title {
     text-align: center;
     font-size: 300%;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 #home div div {
@@ -116,11 +148,15 @@ section {
     font-size: 300%;
 }
 
+#my-name {
+    color: lightblue;
+}
+
 #github-btn {
     background-color: #383636;
     padding: 10px 100px;
     border-radius: 20px;
-    color: #C4C4C4;
+    color: #FFF;
     text-decoration: none;
     font-weight: bold;
     font-size: 200%;
@@ -128,8 +164,80 @@ section {
     justify-content: center;
 }
 
+#github-btn:hover {
+    color: #C4C4C4;
+}
+
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about-me-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#about-me img {
+    height: 60vh;
+    border-radius: 50%;
+}
+
+#about-me-table {
+    width: 40%;
+    height: 60vh;
+    background-color: #333;
+}
+
+#about-me-table #about-me-selector {
+    width: 100%;
+    height: 10%;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-btn {
+    width: 34%;
+    height: 100%;
+    cursor: pointer;
+    margin: 0;
+    color: #FFF;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.about-me-btn:not(:last-child) {
+    border-right: 3px solid #111;
+}
+
+#about-me-table button:hover {
+    background-color: #444;
+}
+
+#about-me-text {
+    background-color: #333;
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+}
+
+#about-me-text h3 {
+    margin-bottom: 10px;
+    font-size: 200%;
+}
+
+#about-me-text p {
+    text-align: justify;
+}
+
 #skills {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -138,7 +246,7 @@ section {
     width: 100%;
 }
 
-.skills-full-table {
+#skills-full-table {
     width: 50%;
     height: 50%;
     background-color: #333;
@@ -164,26 +272,73 @@ section {
     cursor: pointer;
 }
 
-.skills-text {
+#skills-text {
     width: 40%;
+    height: 50%;
+    background-color: #333;
+    border: 10px solid #444;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #skills-name {
     font-size: 300%;
+    border-bottom: 1px solid #FFF;
 }
 
 #skills-description {
     font-size: 200%;
+    text-align: justify;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .projects-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 70%;
+    gap: 10px;
 }
 
 .projects-img {
-    width: 50%;
-    cursor: pointer;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.projects-container div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-link {
+    text-decoration: none;
+    background-color: #333;
+    padding: 20px;
+    width: 45%;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-link:hover {
+    color: #C4C4C4;
+    background-color: #222;
+}
+
+.projects-link i {
+    font-size: 20px;
 }
 
 footer {
@@ -195,23 +350,137 @@ footer {
 }
 
 #github-link {
-    color: #FF0000;
+    color: lightblue;
     text-decoration: none;
 }
 
 #github-link:hover {
-    color: #CC0000;
+    color: lightcyan;
 }
 
-@media screen and (max-width: 480px) {
-    header nav ul {
+@media screen and (max-width: 500px) {
+
+    header nav > ul {
         display: none;
     }
 
     #ham-btn {
         display: inline-block;
         color: #FFF;
-        font-size: 30px;
+        font-size: 40px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #ham-btn:hover #ham-nav {
+        display: block;
+        left: 0;
+    }
+
+    #ham-nav {
+        width: 100%;
+        background-color: #151515;
+        border-bottom: 3px solid #666;
+    }
+
+    #ham-nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ham-nav ul li a {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    .section-title {
+        margin-bottom: 0px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    #github-btn {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    #home img, #home-img {
+        display: none;
+    }
+
+    #home div {
+        width: 100%;
+    }
+
+    #about-me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-me img {
+        height: 30vh;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #about-me-table {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .about-me-btn {
+        font-size: 20px;
+    }
+
+    #skills {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #skills-full-table {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .skills-table {
+        gap: 5px;
+    }
+
+    .skills-icons {
+        width: 50px;
+        height: 50px;
+    }
+
+    #skills-text {
+        width: 100%;
+    }
+
+    #skills-text p {
+        font-size: 20px;
+    }
+
+    #projects {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .projects-container {
+        width: 100%;
     }
 }
 
