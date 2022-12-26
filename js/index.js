@@ -2,6 +2,25 @@ const skillsIcons = document.querySelectorAll(".skills-icons");
 const skillsText = document.querySelector("#skills-text");
 const aboutMeBtn = document.querySelectorAll(".about-me-btn");
 const aboutMeText = document.querySelector("#about-me-text");
+const scrollTopBtn = document.querySelector("#scroll-top-btn");
+
+const hamBtn = document.querySelector("#ham-btn");
+const hamNav = document.querySelector("#ham-nav");
+let counter = 0;
+
+hamBtn.addEventListener("click", () => {
+    counter++;
+    counter % 2 === 1 ? hamNav.style.display = "block" : hamNav.style.display = "none"
+});
+
+window.onscroll = () => {
+    document.body.scrollTop > 150 || document.documentElement.scrollTop > 150 ? scrollTopBtn.style.visibility = "visible" : scrollTopBtn.style.visibility = "hidden"
+}
+
+scrollTopBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
 
 skillsIcons.forEach(icon => {
     icon.addEventListener("click", () => {

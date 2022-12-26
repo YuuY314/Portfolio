@@ -118,12 +118,38 @@ main {
     min-height: 200vh;
     width: 100%;
     color: #FFF;
+    position: relative;
+}
+
+main > button {
+    position: fixed;
+    font-size: 3em;
+    color: #000;
+    background-color: #FFF;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    margin: 20px 20px;
+    text-decoration: none;
+    z-index: 100;
+    visibility: hidden;
+    cursor: pointer;
 }
 
 section {
     min-height: 95vh;
     width: 100%;
     padding: 50px;
+}
+
+section:not(:first-of-type) {
+    visibility: hidden;
 }
 
 .section-title {
@@ -358,6 +384,14 @@ footer {
     color: lightcyan;
 }
 
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
 @media screen and (max-width: 500px) {
 
     header nav > ul {
@@ -366,18 +400,23 @@ footer {
 
     #ham-btn {
         display: inline-block;
-        color: #FFF;
-        font-size: 40px;
-        background-color: transparent;
-        border: none;
     }
 
-    #ham-btn:hover #ham-nav {
-        display: block;
-        left: 0;
+    #ham-btn button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: #FFF;
     }
 
     #ham-nav {
+        display: none;
+        left: 0;
         width: 100%;
         background-color: #151515;
         border-bottom: 3px solid #666;
@@ -391,7 +430,15 @@ footer {
 
     #ham-nav ul li a {
         width: 100%;
-        font-size: 10px;
+        font-size: 20px;
+    }
+
+    main > a {
+        height: 60px;
+        width: 60px;
+        background-color: #FFF;
+        color: #000;
+        font-size: 30px;
     }
 
     section {
