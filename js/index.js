@@ -27,7 +27,7 @@ skillsIcons.forEach(icon => {
         if(icon.id === "html"){
             skillsText.innerHTML = "<h1 id='skills-name'>HTML</h1><p id='skills-description'>É uma linguagem de marcação de hiper-texto, Facilmente de aprender, o HTML se domina em poucos dias. Apesar de muitos não conhecerem todas as tags existentes.</p>"
         } else if(icon.id === "css") {
-            skillsText.innerHTML = "<h1 id='skills-name'>CSS</h1><p id='skills-description'>Acompanhado do HTML, o CSS é o que vai estilizar todo o conteúdo. Eu particularmente não tenho domínio total pela limitação artística, mas sei usar a ferramenta.</p>"
+            skillsText.innerHTML = "<h1 id='skills-name'>CSS</h1><p id='skills-description'>Acompanhado do HTML, o CSS é o que vai estilizar todo o conteúdo. Eu particularmente não tenho domínio total pela limitação artística, mas sei usar a linguagem.</p>"
         } else if(icon.id === "javascript"){
             skillsText.innerHTML = "<h1 id='skills-name'>JavaScript</h1><p id='skills-description'>O JavaScript é o que dá a funcionalidade para o site. Sou suficientemente capaz de programar toda a interativa deste portfólio sabendo o básico, apesar de não ter uma das melhores otimizações.</p>"
         } else if(icon.id === "php"){
