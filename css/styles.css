@@ -212,7 +212,7 @@ section:not(:first-of-type) {
 
 #scroll-down-indicator i {
     font-size: 50px;
-    animation: scroll-down-indicator-animation 1s linear infinite;
+    animation: scroll-down-indicator-animation 1.2s linear infinite;
 }
 
 @keyframes scroll-down-indicator-animation {
@@ -221,7 +221,7 @@ section:not(:first-of-type) {
     }
 
     to {
-        transform: translateY(10px);
+        transform: translateY(30px);
     }
 }
 
@@ -497,6 +497,10 @@ footer {
         width: 100%;
     }
 
+    #scroll-down-indicator {
+        bottom: 80px;
+    }
+
     #about-me {
         flex-direction: column;
         justify-content: center;
@@ -546,6 +550,10 @@ footer {
 
     #skills-text {
         width: 100%;
+    }
+
+    #skills-name {
+        font-size: 200%;
     }
 
     #skills-text p {
@@ -671,10 +679,76 @@ footer {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
+    #home {
+        flex-wrap: nowrap;
+    }
+
+    #home img {
+        width: 450px;
+        height: 405px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }   
+
+    #home h1:nth-child(2) {
+        font-size: 25px;
+    }
+
+    #github-btn {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #scroll-down-indicator {
+        bottom: 80px;
+    }
+
+    #about-me img {
+        height: 50vh;
+    }
+
+    #about-me-table {
+        height: 50vh;
+    }
+
+    .about-me-btn {
+        font-size: 20px;
+    }
+
+    .skills-icons {
+        width: 70px;
+        height: 70px;
+    }
+
+    #skills-name {
+        font-size: 200%;
+    }
+
+    #skills-description {
+        font-size: 20px;
+    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
 
+    #github-btn {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    #about-me-text p {
+        font-size: 20px;
+    }
+
+    #skills-text h1 {
+        font-size: 200%;
+    }
+
+    #skills-text p {
+        font-size: 30px;
+    }
 }
