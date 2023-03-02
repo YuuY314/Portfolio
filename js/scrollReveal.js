@@ -10,5 +10,4 @@ sr.reveal("#about-me-table", {duration: 2000, distance: "100px", origin: "top"})
 sr.reveal("#skills-full-table", {duration: 2000, distance: "100px", origin: "top"});
 sr.reveal("#skills-text", {duration: 2000, distance: "100px", origin: "top"});
 
-sr.reveal("#ds-fanpage", {duration: 2000, distance: "100px", origin: "top"});
-sr.reveal("#dungeon-mail", {duration: 2000, distance: "100px", origin: "top"});
+sr.reveal(".projects-container", {duration: 2000, distance: "100px", origin: "top"});

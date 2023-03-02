@@ -348,11 +348,12 @@ section:not(:first-of-type) {
     text-align: justify;
 }
 
-#projects {
+.projects {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
 .projects-container {
