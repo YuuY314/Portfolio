@@ -45,8 +45,11 @@ skillsIcons.forEach(icon => {
         } else if(icon.id === "vscode"){
             skillsText.innerHTML = "<h1 id='skills-name'>Visual Studio Code</h1><p id='skills-description'>Eu praticamente só uso o VS Code para qualquer coisa, apesar de ter dificuldade para rodar alguns programas como java, que precisam de compilador.</p>";
         } else if (icon.id === "react"){
-            skillsText.innerHTML = "<h1 id='skills-name'>React</h1><p id='skills-description'>Avançando um pouco mais no Desenvolvimento Front End, React é a biblioteca mais popular usada para criar sites profissionais. Tenho só conhecimento básico. Ainda sem projeto usando React.</p>"
-        } else if (icon.id === "unity"){
+            skillsText.innerHTML = "<h1 id='skills-name'>React.Js</h1><p id='skills-description'>Avançando um pouco mais no Desenvolvimento Front End, React é a biblioteca mais popular usada para criar sites profissionais. Tenho só conhecimento básico. Ainda sem projeto usando React.</p>"
+        } else if (icon.id === "nodejs"){
+            skillsText.innerHTML = "<h1 id='skills-name'>Node.Js</h1><p id='skills-description'>Node.Js é uma tecnologia em alta no Desenvolvimento Web por meio da criação de aplicações e interfaces através de API's que trabalham no Back End com a linguagem JavaScript.</p>"
+        }
+        else if (icon.id === "unity"){
             skillsText.innerHTML = "<h1 id='skills-name'>Unity</h1><p id='skills-description'>Provavelmente vai ser a ferramenta que mais vou estar usando daqui a algum tempo, Unity é meio complicado no começo mas com o tempo você acostuma.</p>"
         }
     });
